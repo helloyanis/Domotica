@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
-    <link href="compte.css" rel="stylesheet">
+    <link href="ins.css" rel="stylesheet">
+    <link href="navbar.css" rel="stylesheet">
 </head>
 <body>
     <header class="navbar">
@@ -18,26 +19,36 @@
     </header>
 
     <form class="ins">
-       <h2>S'inscrire:</h2>  
-        <input type="text" placeholder="Nom" style="width:90%; height: 2em;">
-        <input type="text" placeholder="Prenom" style="width: 90%; height: 2em;">
-        <input type="text" placeholder="Pseudo" style="width: 90%; height: 2em;">
-        <input type="date" placeholder="Date de naissance" style="width: 90%; height: 2em;">
-        <input type="email" placeholder="e-mail" style="width: 90%; height: 2em;">
-        <input type="text" placeholder="Adresse" style="width:  90%; height: 2em;">
-        <input type="number" placeholder="Code postal" style="width: 90%; height: 2em;">
-        <input type="text" placeholder="Ville" style="width: 90%; height: 2em;">
-        <input type="number" placeholder="numéro de téléphone" style="width: 90%; height: 2em;">
-        <input type="password" placeholder="mot de passe" style="width: 90%; height: 2em;">
-        <button style="width: 70%; height: 2em;">Valider</button>
+       <h2>S'inscrire:</h2> 
+        
+        <span>Nom :</span><br>
+        <input type="text" placeholder="Nom">
+        <span>Prénom :</span>
+        <input type="text" placeholder="Prenom">
+        <span>Pseudo :</span>        
+        <input type="text" placeholder="Pseudo">
+        <span>Date de naissance:</span>
+        <input type="date" placeholder="Date de naissance">
+        <span>Email :</span>
+        <input type="email" placeholder="e-mail">
+        <span>Adresse :</span>
+        <input type="text" placeholder="Adresse">
+        <span>Code Postal :</span>
+        <input type="number" placeholder="Code postal">
+        <span>Ville :</span>
+        <input type="text" placeholder="Ville">
+        <span>Numero de téléphone :</span>
+        <input type="number" placeholder="numéro de téléphone">
+        <span>Mot de passe :</span>
+        <input type="password" placeholder="mot de passe">
+        <button class="bouton3"><a href="Page-profil.html">Valider</a></button>
     </form>
 
     <div class="backdrop">
   <nav>
     <ul>
       <li><a href="index.html">Accueil</a></li>
-      <li><a href="gestion_appareil.html">Gestion de mes appareils</a></li>
-      <li><a href="uti_appareil.html">Mes appareils</a></li>
+      <li><a href="gestion_appareil.html">Mes appareils</a></li>
       <li><a href="Page-profil.html">Mon profil</a></li>
       <li><a href="page-edition.html">Editer mon profil</a></li>
     </ul>

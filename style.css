@@ -3,32 +3,12 @@ body{
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   margin: 0;
 }
-.navbar{
-  background-color: white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 
 img{
   size: 1rem;
 }
-
-.Connect{
-  margin: 0.5rem;
-  border: black solid;
-  border-radius: 10px;
-  transition: transform .1s;
-  padding: 2px;
-  text-decoration: none;
-
   
-}
-.Connect:hover{
-  transform: scale(1.1);
-  cursor: pointer;
-  
-}
 .burger{
   margin: 0.5rem;
 }
@@ -39,6 +19,7 @@ img{
   display:flex;
   justify-content: space-around
 }
+
 .Presentation{
 margin: 1em;
 margin-right: 5em;
@@ -66,98 +47,7 @@ padding: 1em
   margin: 3px;
   padding: 3px
 }
-:focus { /* Quand on navigue au clavier ou quand on clique sur le menu*/
- transition:background-color 0.2s ease-in; 
-}
-.backdrop.active{
-  background-color: rgba(0,0,0,0.2);
-  pointer-events: all;
-}
 
-.active nav {
-  left: 0;
-  
-}
-
-nav{
-  position: relative;
-  top: 0;
-  left: -30%;
-  background-color: white;
-  width: 30%;
-  height: 100%;
-  transition:left 0.2s ease-in;
-}
-
-nav ul {
-margin: 0;
-padding-inline-start: 0;
-list-style-type: none;
-padding: 30px 10px;
-}
-
-nav ul li {
-color: #929292;
-width: 100%;
-text-align: center;
-padding: 15px 0;
-}
-
-
-nav ul li:nth-child(n + 2) {
-border-top: 2px solid rgba(0, 0, 0, 0.1);
-}
-
-.backdrop  {
-  position: absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background-color: rgba(0, 0, 0, 0);
-  pointer-events: none;
-  transition:background-color 0.2s ease-in; 
-
-}
-.backdrop.active{
-  background-color: rgba(0,0,0,0.2);
-  pointer-events: all;
-  text-decoration: none;
-  
-}
-
-.active nav {
-  left: 0;
-}
-
-nav{
-  position: relative;
-  top: 0;
-  left: -30%;
-  background-color: white;
-  width: 30%;
-  height: 100%;
-  transition:left 0.2s ease-in;
-}
-
-nav ul {
-margin: 0;
-padding-inline-start: 0;
-list-style-type: none;
-padding: 30px 10px;
-}
-
-nav ul li {
-color: #929292;
-width: 100%;
-text-align: center;
-padding: 15px 0;
-}
-
-
-nav ul li:nth-child(n + 2) {
-border-top: 2px solid rgba(0, 0, 0, 0.1);
-}
 
 .lien{
   text-decoration: none;
@@ -175,19 +65,41 @@ border-top: 2px solid rgba(0, 0, 0, 0.1);
   outline: none;
   text-decoration: none;
 }
+@media screen 
+  and (orientation: portrait) {
+      .paysage{
+        width: 100vh;
+        height: 1000%;
+        position: absolute;
+        background-color: white;
+        text-align: center;
+        z-index: 9999999;
+        top:0px;
+        right:0px;
+        bottom:0px;
+        left:0px;
+      }
+    }
+
+@media screen
+  and (orientation: landscape){
+      .paysage{
+        padding: 0%;
+        color: #268A7E;
+        position: absolute;
+        margin-left: -5000%
+      }
+    }
 .amp{
   justify-content: space-between;
   display: flex;
-  align-items: center;
-  margin-left: 30px;
-  margin-right: 30px;
 }
 a{
   text-decoration: none;
   color: black;
 }
 .lanc{
-  margin-left: 50%;
+  justify-items: center;
   margin-bottom: 30px;
   align-self: center;
   text-align: center;
@@ -221,8 +133,24 @@ h2{
   text-align: center
 }
 .NosProd{
+  margin: 3rem;
+  border-radius: 10px 0px 10px 0px;
+  box-shadow: 5px 5px 5px black;
+  display: inline-block;
   background-color: bisque;
 }
 .NosProd>div{
-  background-color: red;
+  padding: 1rem;
+  margin: 3rem;
+  display:inline-block;
+  background-color: white;
+  color: black;
+  border: solid black 2px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 5px 5px 5px black;
+}
+img{
+  max-width: 20em;
+  max-height: 20em;
 }

@@ -1,40 +1,23 @@
-.navbar 
-{
-  background-color: #268A7E;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.Connect
-{
-  margin: 0.5rem;
-  border: black solid;
-  border-radius: 10px;
-  transition: transform .1s;
-  background-color:#268A7E;
-  }
-  .Connect:hover{
-    transform: scale(1.1);
-    cursor: pointer
-  }
-  .burger{
-    margin: 0.5rem;
-  }
-  .logo{
-    padding-left: 3rem;
-}
-
 body {
   font-family: sans-serif;
   margin: 0;
 }
 
+/*Barre de navigation*/
+.navbar 
+{
+  background-color: #268A7E;
+}
+
+
+
+/*Page : gestion_appareils*/
 h1{
   text-align: center;
   margin: 50px;
 }
 
+/*Card avec les appareils*/
 .column {
   float: left;
   padding: 0 10px;
@@ -60,8 +43,6 @@ h1{
   }
 }
 
-
-
 .card {
   width: 180px;
   height: 210px;
@@ -73,6 +54,12 @@ h1{
   margin-bottom:20px; 
 }
 
+.card_img{
+  width: 150px;
+  height: auto;
+  border-radius: 55px;
+}
+/*Card pour ajouter un appareil*/
 .card_plus{
   width: 180px;
   height: 210px;
@@ -89,7 +76,7 @@ h1{
   width: 150px;
 }
 
-
+/*Bouton pour supprimer un appareil et ajouter une pièce*/
 .btn_app {
   font-family: sans-serif;
   padding: 15px 25px;
@@ -104,66 +91,7 @@ h1{
 
 
 
-/*bouton burger*/
 
-:focus { /* Quand on navigue au clavier ou quand on clique sur le menu*/
-  outline: 2px solid black;
-}
-.btn{
-  position: relative;
-  z-index: 10;
-  border: none;
-  background: transparent;
-  margin-left: 5px;
-}
-.backdrop  {
-  position: absolute;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
-  background-color: rgba(0, 0, 0, 0);
-  pointer-events: none;
-  transition:background-color 0.2s ease-in; 
-}
-.backdrop.active{
-  background-color: rgba(0,0,0,0.2);
-  pointer-events: all;
-}
-
-.active nav {
-  left: 0;
-  
-}
-
-nav{
-  position: relative;
-  top: 0;
-  left: -30%;
-  background-color: white;
-  width: 30%;
-  height: 100%;
-  transition:left 0.2s ease-in;
-}
-
-nav ul {
-margin: 0;
-padding-inline-start: 0;
-list-style-type: none;
-padding: 30px 10px;
-}
-
-nav ul li {
-color: #929292;
-width: 100%;
-text-align: center;
-padding: 15px 0;
-}
-
-
-nav ul li:nth-child(n + 2) {
-border-top: 2px solid rgba(0, 0, 0, 0.1);
-}
 
 .lien{
   text-decoration: none;
@@ -181,11 +109,7 @@ border-top: 2px solid rgba(0, 0, 0, 0.1);
   outline: none;
 }
 
-.card_img{
-  width: 150px;
-  height: auto;
-  border-radius: 55px;
-}
+
 
 
 
@@ -234,7 +158,7 @@ border-top: 2px solid rgba(0, 0, 0, 0.1);
 .onoffswitch-inner:before {
   content: "ON";
   padding-left: 10px;
-  background-color: rgb(240, 211, 84); 
+  background-color: rgb(161, 247, 140); 
   color: #FFFFFF;
 }
 
@@ -272,7 +196,170 @@ label{
 
 
 /*Curseur luminosité*/
-input {
+/*input {
  margin: .4rem;
  outline: none;
+}*/
+
+/*Input range pour la température*/
+input[type=range] {
+  height: 32px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 70%;
+  background-color: #f1f1f1;
 }
+
+input[type=range]:focus {
+  outline: none;
+  background-color: #f1f1f1;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 2px 2px 1px #000000;
+  background: linear-gradient(to right, blue, red);
+  border-radius: 5px;
+  border: none;
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 1px 1px 2px #0D0404;
+  border: 2px solid #020303;
+  height: 23px;
+  width: 30px;
+  border-radius: 7px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -8.5px;
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+  background:linear-gradient(to right, blue, red) ;
+}
+
+input[type=range]::-moz-range-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  box-shadow: 2px 2px 1px #000000;
+  background: #24B6FF;
+  border-radius: 5px;
+  border: 2px solid #FF2424;
+}
+input[type=range]::-moz-range-thumb {
+  box-shadow: 1px 1px 2px #0D0404;
+  border: 2px solid #020303;
+  height: 23px;
+  width: 30px;
+  border-radius: 7px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]::-ms-track {
+  width: 100%;
+  height: 10px;
+  cursor: pointer;
+  animate: 0.2s;
+  background: transparent;
+  border-color: transparent;
+  color: transparent;
+}
+input[type=range]::-ms-fill-lower {
+  background: #24B6FF;
+  border: 2px solid #FF2424;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px #000000;
+}
+input[type=range]::-ms-fill-upper {
+  background: #24B6FF;
+  border: 2px solid #FF2424;
+  border-radius: 10px;
+  box-shadow: 2px 2px 1px #000000;
+}
+input[type=range]::-ms-thumb {
+  margin-top: 1px;
+  box-shadow: 1px 1px 2px #0D0404;
+  border: 2px solid #020303;
+  height: 23px;
+  width: 30px;
+  border-radius: 7px;
+  background: #FFFFFF;
+  cursor: pointer;
+}
+input[type=range]:focus::-ms-fill-lower {
+  background: #24B6FF;
+}
+input[type=range]:focus::-ms-fill-upper {
+  background: #24B6FF;
+}
+
+
+/*Lien appareil vers réglages*/
+.lien_app{
+  text-decoration: none;
+  color: black;
+}
+
+
+/*Réglages des appareils*/
+
+.reglage{
+  width : 60%;
+  height: auto; 
+  background-color: #f1f1f1;
+  margin: 30px auto 30px auto;
+  padding: 40px;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*Réglage couleurs*/
+
+.carre{
+  width:50px;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  border-color: black;
+  border-width: 3px;
+  border-style: double;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px 20px 10px 20px;
+}
+
+.jaune{
+  background-color: rgb(250, 250, 116);
+}
+
+.orange{
+  background-color: rgb(250, 206, 125);
+}
+
+.rouge{
+  background-color: rgb(255, 0, 0);
+}
+
+.rose{
+  background-color: rgb(255, 117, 225);
+}
+
+.violet{
+  background-color: rgb(163, 0, 228);
+}
+
+.bleu{
+  background-color: rgb(48, 62, 253);
+}
+
+.vert{
+  background-color: rgb(19, 233, 0);
+}
+
+
+
+
