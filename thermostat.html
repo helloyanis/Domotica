@@ -39,6 +39,8 @@
       <label class="onoffswitch-label" for="my1offswitch">
        <span class="onoffswitch-inner"></span>
        <span class="onoffswitch-switch"></span>
+       <link rel="preconnect" href="https://fonts.gstatic.com">
+       <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap" rel="stylesheet">
       </label>
     </div>
 
@@ -46,9 +48,11 @@
 
     <h2>Température</h2>
 
-    <div>
-     <input type="range" min="0" max="50">
-   </div>
+    
+    <input type="range" class="temp" min="0" max="50" step="1">
+    <output></output>
+   
+
 
    
 
@@ -73,7 +77,7 @@
 
   <script src="script.js"></script>
 
-
+ 
 
     
 </body>

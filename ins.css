@@ -4,6 +4,9 @@ body {
     margin: 0;
 
 }
+h2{
+  font-family: 'Lobster', cursive;
+}
 
 a{
 
@@ -45,11 +48,15 @@ input{
 }
 
 /* page inscription.html*/
+span {
+  text-align: left;
+  margin: 10px 5px;
+  padding: 10px;
+}
 
 .ins {
-    display: block;
     text-align: center;
-    line-height: 50px;
+    display: block;
     height: 5%;
     width: 30%;
     box-shadow: white;
@@ -58,13 +65,16 @@ input{
     background-color: white;
     padding: 30px;
     margin: 40px 33%;
+    
 
 }
+
 
 input[type="email"],
 input[type="password"],
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+input[type="date"] {
   width: 100%;
   padding: 12px 20px;
   margin: 0 auto;
@@ -77,8 +87,10 @@ input[type="number"] {
 @media (max-width: 768px) {
     .ins
     {
-    width: 85%;
-    margin: 40px 4.5%;}
+    border: solid 1px  black;
+    padding: 25px;
+    width: 76%;
+    margin: 40px 5%;}
     }
 
 
