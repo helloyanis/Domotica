@@ -1,0 +1,278 @@
+.navbar 
+{
+  background-color: #268A7E;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Connect
+{
+  margin: 0.5rem;
+  border: black solid;
+  border-radius: 10px;
+  transition: transform .1s;
+  background-color:#268A7E;
+  }
+  .Connect:hover{
+    transform: scale(1.1);
+    cursor: pointer
+  }
+  .burger{
+    margin: 0.5rem;
+  }
+  .logo{
+    padding-left: 3rem;
+}
+
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+h1{
+  text-align: center;
+  margin: 50px;
+}
+
+.column {
+  float: left;
+  padding: 0 10px;
+}
+
+.liste{
+  margin: 20px;
+  padding: 0px 40px 0px 40px;
+  align-content:center ;
+}
+
+.liste:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.card {
+  width: 180px;
+  height: 210px;
+  padding: 16px;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 2px; 
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-bottom:20px; 
+}
+
+.card_plus{
+  width: 180px;
+  height: 210px;
+  padding: 30px 16px 0px 16px;
+  box-shadow: 0 4px 8px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 2px; 
+  text-align: center;
+  background-color: #f1f1f1;
+  margin-bottom:20px;
+  
+}
+
+.plus{
+  width: 150px;
+}
+
+
+.btn_app {
+  font-family: sans-serif;
+  padding: 15px 25px;
+  margin: 25px auto 25px auto;
+  border-radius : 25px;
+  border: none;
+  box-shadow: 4px 5px 6px 1px rgba(0,0,0,0.3);
+  cursor: pointer;
+  background-color: #f1f1f1;
+  display: block;
+}
+
+
+
+/*bouton burger*/
+
+:focus { /* Quand on navigue au clavier ou quand on clique sur le menu*/
+  outline: 2px solid black;
+}
+.btn{
+  position: relative;
+  z-index: 10;
+  border: none;
+  background: transparent;
+  margin-left: 5px;
+}
+.backdrop  {
+  position: absolute;
+  top:0;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: rgba(0, 0, 0, 0);
+  pointer-events: none;
+  transition:background-color 0.2s ease-in; 
+}
+.backdrop.active{
+  background-color: rgba(0,0,0,0.2);
+  pointer-events: all;
+}
+
+.active nav {
+  left: 0;
+  
+}
+
+nav{
+  position: relative;
+  top: 0;
+  left: -30%;
+  background-color: white;
+  width: 30%;
+  height: 100%;
+  transition:left 0.2s ease-in;
+}
+
+nav ul {
+margin: 0;
+padding-inline-start: 0;
+list-style-type: none;
+padding: 30px 10px;
+}
+
+nav ul li {
+color: #929292;
+width: 100%;
+text-align: center;
+padding: 15px 0;
+}
+
+
+nav ul li:nth-child(n + 2) {
+border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+.lien{
+  text-decoration: none;
+  color: #929292 ;
+}
+
+
+.souspartie{
+  margin: 50px;
+}
+
+.piece{
+  color: grey;
+  font-size: 18px;
+  outline: none;
+}
+
+.card_img{
+  width: 150px;
+  height: auto;
+  border-radius: 55px;
+}
+
+
+
+/*Boutons on/off*/
+.onoffswitch {
+  position: relative; 
+  width: 90px;
+  -webkit-user-select:none; 
+  -moz-user-select:none; 
+  -ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+  display: none;
+}
+
+.onoffswitch-label {
+  display: block; 
+  overflow: hidden; 
+  cursor: pointer;
+  border: 2px solid #999999; 
+  border-radius: 20px;
+}
+
+.onoffswitch-inner {
+  display: block; 
+  width: 200%; 
+  margin-left: -100%;
+  transition: margin 0.3s ease-in 0s;
+}
+
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+  display: block; 
+  float: left; 
+  width: 50%; 
+  height: 30px; 
+  padding: 0; 
+  line-height: 30px;  
+  font-size: 14px; 
+  color: white; 
+  font-family: Trebuchet, Arial, sans-serif; 
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+.onoffswitch-inner:before {
+  content: "ON";
+  padding-left: 10px;
+  background-color: rgb(240, 211, 84); 
+  color: #FFFFFF;
+}
+
+.onoffswitch-inner:after {
+  content: "OFF";
+  padding-right: 10px;
+  background-color: #EEEEEE; color: #999999;
+  text-align: right;
+}
+
+.onoffswitch-switch {
+  display: block; 
+  width: 18px; 
+  margin: 6px;
+  background: #FFFFFF;
+  position: absolute; 
+  top: 0; 
+  bottom: 0;
+  right: 56px;
+  border: 2px solid #999999; border-radius: 20px;
+  transition: all 0.3s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+  margin-left: 0;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+  right: 0px;
+}
+ 
+label{
+  display:inline-block;
+}  
+
+
+/*Curseur luminosité*/
+input {
+ margin: .4rem;
+ outline: none;
+}

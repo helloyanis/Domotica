@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editer votre profil</title>
+ <link rel="stylesheet" href="page-edition.css">
+</head>
+<body>
+
+  <header class="navbar">
+		<!--La navbar-->
+		
+			<button class="btn"><img class="burger "src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="bouton burger" height="20em" width="20em"></button>
+      
+     <img class="logo" src="./img/logo.jpg" alt="Logo" height="50em" width="50em">
+      
+      <a class="button" href="#"> Rick&Morty</a>
+    </header>
+
+
+   <div class="form-div">
+    <h3>Editer votre profil</h3>
+
+    <form>
+
+      <label>Avatar: </label> 
+      <input type="file" name="avatar"> 
+
+      <span>Email :</span>
+      <input type="email" name="newmail" >
+
+      <span>Adresse :</span>
+      <input type="text" name="newaddress" >
+
+      <span>Code postal:</span>
+      <input type="text" name="newpostcode" >
+
+      <span>Ville:</span>
+      <input type="text" name="newcity" >
+
+      <span>Numéro de téléphone:</span>
+      <input type="text" name="newphonenumber" >
+
+      <input type="submit" name="submit" value="Valider">
+    </form>
+
+    
+    <details>
+      <summary>
+        <h3>Changer le mot de passe</h3>
+      </summary>
+     
+
+        <span> Ancien mot de passe:</span>
+        <input type="password" >
+
+        <span>Nouveau mot de passe:</span>
+        <input type="password"> 
+
+        <span>Confirmer le nouveau mot de passe:</span><br>
+        <input type="password" >
+
+        <input type="submit" name="submitPass" value="Valider">
+
+      </form>
+    </details>
+
+  </div>
+</body>
+</html>
