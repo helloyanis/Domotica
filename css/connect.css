@@ -4,19 +4,25 @@ body {
     margin: 0;
 
 }
+
+::placeholder
+{
+  font-family: 'Montserrat',sans-serif;
+}
 h2{
   font-family: 'Lobster', cursive;
 }
 
 a{
-
+font-family: 'Montserrat',sans-serif;
 text-decoration: none;
 color: black;
 }
 
 
 p {
-    font-size: 18px;
+  font-family: 'Montserrat',sans-serif;
+  font-size: 18px;
 }
 
 .bouton3 {
@@ -44,54 +50,29 @@ span {
 
 input{
   width: 60%; 
-  height: 2em;
+  height: 35px;
 }
 
-/* page inscription.html*/
-span {
-  text-align: left;
-  margin: 10px 5px;
-  padding: 10px;
-}
-
-.ins {
+/*page connect.html*/
+.connexion {
+    display:block;
     text-align: center;
-    display: block;
+    line-height: 50px;
     height: 5%;
     width: 30%;
-    box-shadow: white;
+    box-shadow:  5px 5px 5px black;
     border: solid 2px  black;
     border-radius: 20px;
     background-color: white;
-    padding: 30px;
-    margin: 40px 33%;
+    padding: 10px;
+    margin: 40px 33%; 
     
-
-}
-
-
-input[type="email"],
-input[type="password"],
-input[type="text"],
-input[type="number"],
-input[type="date"] {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
 }
 
 @media (max-width: 768px) {
-    .ins
-    {
-    border: solid 1px  black;
-    padding: 25px;
-    width: 76%;
-    margin: 40px 5%;}
+    .connect{
+    width: 85%;
+    margin: 40px 4.5%;}
     }
 
-
-
+  

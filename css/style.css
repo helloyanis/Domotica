@@ -15,18 +15,14 @@ img{
 .logo{
   padding-left: 3rem;
 }
-.Contenu{
-  display:flex;
-  justify-content: space-around
-}
+
 
 .Presentation{
-margin: 1em;
-margin-right: 5em;
+
 
 background-color: white;
 text-align: left;
-max-width: 50%;
+
 box-shadow:  5px 5px 5px black;
 padding: 10px;
 border-radius: 0px 10px 0px 10px
@@ -34,9 +30,9 @@ border-radius: 0px 10px 0px 10px
 }
 .Actus{
 vertical-align:middle;
-margin-left: 3em;
+
 margin: 1em;
-max-width: 30%;
+
 background-color: grey;
 padding: 1em
 }
@@ -67,19 +63,79 @@ padding: 1em
 }
 
 
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 600px) { /*Petit écran
 
-      .amp{
+      .amp{ /*Pour enlever les ampoules sur les petits écrans*/
         padding: 0%;
         color: #268A7E;
         position: absolute;
         margin-left: -5000%
       }
-      .NosProd>div>img{
-        max-width: 150px;
-        max-height: 150px;
-      }
-    }
+      .NosProd>div>div{
+  padding: 1rem;
+  margin: 1rem;
+  display:block;
+  background-color: white;
+  color: black;
+  border: solid black 2px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 3px 3px 3px black;
+  overflow: hidden;
+
+}
+img{
+  max-width: 7em;
+  max-height: 7em;
+}
+
+
+@media only screen and (min-width: 601px){
+  .NosProd>div>div{
+  padding: 1rem;
+  margin: 1rem;
+  display:inline-block;
+  background-color: white;
+  color: black;
+  border: solid black 2px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 3px 3px 3px black;
+  justify-content:space-around;
+  overflow: hidden;
+
+}
+.Contenu{
+  display:flex;
+  justify-content: space-around
+}
+.Presentation{
+  margin: 1em;
+  margin-right: 5em;
+  margin-left: 3em;
+max-width: 30%;
+}
+img{
+  max-width: 15em;
+  max-height: 15em;
+}
+.prodcont{
+  justify-content: space-between;
+  display: flex
+}
+
+}
+.NosProd>div>img{
+  max-width: 50px;
+  max-height: 50px;
+}
+    
+@media only screen and (min-width: 601px) {
+  .NosProd>div>img{
+  max-width: 7em;
+  max-height: 7em;
+}
+}
 .amp{
   justify-content: space-between;
   display: flex;
@@ -100,6 +156,7 @@ a{
   padding: 2px;
   text-decoration: none;
   transition: transform .1s;
+  margin-bottom: 30px
 
 }
 .lanc:hover{
@@ -126,31 +183,16 @@ h2{
   text-align: center;
   font-family: Lobster
 }
+.produits{
+  display: flex;
+  justify-content: space-around
+}
+
 .NosProd{
   margin: 2rem;
   border-radius: 10px 0px 10px 0px;
   box-shadow: 3px 3px 3px black;
-  display: block;
+  display: ;
   background-color: bisque;
   justify-content: space-around
-}
-.NosProd>div{
-  padding: 1rem;
-  margin: 10px;
-  display:inline-block;
-  background-color: white;
-  color: black;
-  border: solid black 2px;
-  border-radius: 5px;
-  text-align: center;
-  box-shadow: 3px 3px 3px black;
-
-}
-.NosProd>div>img{
-  max-width: 100px;
-  max-height: 100px;
-}
-img{
-  max-width: 20em;
-  max-height: 20em;
 }

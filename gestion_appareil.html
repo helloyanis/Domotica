@@ -3,119 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Gestion des appareils</title>
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="appareil.css">
-
+  <title>Mes appareils</title>
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/appareil.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+
+  <!--La barre de navigation--> 
   <header class="navbar">
-		<!--La navbar-->
 		
 		<button class="btn"><img class="burger "src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="bouton burger" height="20em" width="20em"></button>
       
-    <img class="logo" src="./img/logo_vert.jpg" alt="Logo" height="50em" width="50em">
+    <img class="logo" src="./img/logo.jpg" alt="Logo" height="50em" width="50em">
       
-    <a class="button" href="connect.html"> Se connecter</a>
+    <a class="connect" href="connect.html"> Se connecter</a>
   </header>
-    
-  <h1>Gestion des appareils</h1>
+  
 
-  <details class="souspartie">
-    <summary class="piece">
-      Salon
-    </summary>
+ <main class="main_appareil">
+    <h1>Mes appareils</h1>
+     
+    <!-- Sous-parties qui se déroulent-->
+    <details class="souspartie">
+      <summary class="piece">
+        Salon
+      </summary>
 
-    <div class="liste">
-      <div class="column">
-       <a class="lien_app" href="lampe-principale.html">
-         <div class="card">
-           <img class="card_img" src="./img/ampoule_led.jpg">
-         <h3>Lampe principale</h3>   
-       </div>
-       </a>
-      </div>
-      <div class="column">
-        <a class="lien_app" href="lampe-couleur.html">
-         <div class="card">
-           <img class="card_img" src="./img/ampoule_color.jpg">
-           <h3>Lampe colorée</h3>   
-         </div>
-        </a>
-      </div>
-      <div class="column">
-       <a class="lien_app" href="lampe-couleur.html">
-         <div class="card">
-           <img class="card_img" src="./img/ampoule_color.jpg">
-           <h3>Lampe murale</h3>   
-         </div>
-       </a>
-      </div>
-      <div class="column">
-        <div class="card_plus">
-          <a href="#"><img class="plus" title="Ajouter un appareil" src="./img/plus.png" alt="Ajouter un appareil"></a> 
-        </div>
-     </div>
-    </div>
- 
-    <button class="btn_app">Supprimer un appareil</button>
-
-  </details>
-
-  <hr>
-
-  <details class="souspartie">
-    <summary class="piece">
-      Chambre
-    </summary>
-
-    <div class="liste">
-      <div class="column">
+      <!--Cards avec les appareils -->
+    <section class="liste">
+      <article class="column">
         <a class="lien_app" href="lampe-principale.html">
-         <div class="card">
-           <img class="card_img" src="./img/ampoule_led.jpg">
-           <h3>Lampe principale</h3>   
-         </div>
+          <div class="card">
+            <img class="card_img" src="./img/ampoule_led.jpg">
+            <h3>Lampe principale</h3>   
+          </div>
         </a>
-      </div>
-      <div class="column">
-       <a class="lien_app" href="lampe-couleur.html">
-         <div class="card">
-           <img class="card_img" src="./img/ampoule_color.jpg">
-           <h3>Lampe de chevet</h3>   
-         </div>
-       </a>
-      </div>
-      <div class="column">
-       <a class="lien_app" href="thermostat.html">
-         <div class="card">
-           <img class="card_img" src="./img/thermostat.jpg">
-           <h3>Thermostat</h3>   
-         </div>
+      </article>
+      <article class="column">
+        <a class="lien_app" href="lampe-couleur.html">
+          <div class="card">
+            <img class="card_img" src="./img/ampoule_color.jpg">
+            <h3>Lampe colorée</h3>   
+          </div>
         </a>
-      </div>
-      <div class="column">
-        <div class="card_plus">
-          <a href="#"><img class="plus" title="Ajouter un appareil" src="./img/plus.png" alt="Ajouter un appareil"></a> 
-       </div>
-     </div>
-    </div>
+      </article>
+      <article class="column">
+        <a class="lien_app" href="lampe-couleur.html">
+          <div class="card">
+            <img class="card_img" src="./img/ampoule_color.jpg">
+            <h3>Lampe murale</h3>   
+          </div>
+        </a>
+      </article>
+      <article class="column">
+        <div class="card plus">
+          <a href="#"><img class="img_plus" title="Ajouter un appareil" src="./img/plus.png" alt="Ajouter un appareil"></a> 
+        </div>
+      </article>
+    </section>
+    
+      <button class="btn_app">Supprimer un appareil</button>
 
-    <button class="btn_app">Supprimer un appareil</button>
+    </details>
 
-  </details>
+    <hr>
 
-  <hr>
+    <details class="souspartie">
+      <summary class="piece">
+        Chambre
+      </summary>
 
-  <button class="btn_app">Ajouter une pièce</button>
+      <section class="liste">
+        <article class="column">
+          <a class="lien_app" href="lampe-principale.html">
+          <div class="card">
+            <img class="card_img" src="./img/ampoule_led.jpg">
+            <h3>Lampe principale</h3>   
+          </div>
+          </a>
+        </article>
+        <article class="column">
+        <a class="lien_app" href="lampe-couleur.html">
+          <div class="card">
+            <img class="card_img" src="./img/ampoule_color.jpg">
+            <h3>Lampe de chevet</h3>   
+          </div>
+        </a>
+        </article>
+        <article class="column">
+        <a class="lien_app" href="thermostat.html">
+          <div class="card">
+            <img class="card_img" src="./img/thermostat.jpg">
+            <h3>Thermostat</h3>   
+          </div>
+          </a>
+        </article>
+        <article class="column">
+          <div class="card plus">
+            <a href="#"><img class="img_plus" title="Ajouter un appareil" src="./img/plus.png" alt="Ajouter un appareil"></a> 
+        </div>
+        </article>
+      </section>
 
+      <button class="btn_app">Supprimer un appareil</button>
 
+    </details>
 
+    <hr>
 
-
+    <button class="btn_app">Ajouter une pièce</button>
+ </main>
+ 
+ 
+  <!-- Menu burger-->
   <div class="backdrop">
    <nav>
      <ul class="Listemenu">
@@ -126,6 +128,7 @@
      </ul>
    </nav>
  </div>
+
  <script src="script.js"></script>
 
 

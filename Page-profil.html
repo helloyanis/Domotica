@@ -1,74 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Profil</title>
-  <link rel="stylesheet" href="navbar.css">
-	<link rel="stylesheet" href="page-profil.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+	<link rel="stylesheet" href="./css/page-profil.css">
 </head>
 
 <body>
-<header class="navbar">
+  <header class="navbar">
 		<!--La navbar-->
-		
-			<button class="btn"><img class="burger "src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="bouton burger" height="20em" width="20em"></button>
-      
-     <img class="logo" src="./img/logo.jpg" alt="Logo" height="50em" width="50em">
-      
-      <a class="button" href="#"> Rick&Morty</a>
-    </header>
+		<button class="btn">
+      <img class="burger "src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="bouton burger" height="20em" width="20em">
+    </button>
+    <img class="logo" src="./img/logo.jpg" alt="Logo" height="50em" width="50em">  
+    <a class="connect" href="#"> Rick&Morty</a>
+  </header>
 
-    <form class="formulaire ">
-        <div class="info">
-            <h3>Profil</h3>
+  <section class="profil">
+    <h3>Profil</h3>
+    <img class="Avatar" src="img/Rick.jpg" width="396px" height="415px">
+    <a class="editionProfil" href="page-edition.html">Editer mon profil</a>
+    <div class="informations">
+        <p><span class="name">Nom :</span> Sanchez </p>
+        <p><span class="name">Prénom :</span>Rick</p>
+        <p><span class="name">Date de naissance :</span>12/07/1942</p>
+        <p><span class="name">Pseudo :</span> Rick&Morty</p>
+        <p><span class="name">Email :</span> rick&morty@hotmail.com</p>
+        <p><span class="name">Adresse :</span> 14 obama street</p>
+        <p><span class="name">Code postal :</span> 04468</p>
+        <p><span class="name">Ville :</span> Oldtown (Midwest)</p>
+        <p><span class="name">Numéro de téléphone :</span> 0102030405</p>
+    </div>  
+  </section>
 
-            
-                <img class="Avatar" src="img/Rick.jpg" width="250">
-            
-            <a class="editionProfil" href="page-edition.html">Editer mon profil</a>
-            
-                <div class="flexContainer ">
-                    <div class="colonne1">
-                        <p> <span> Nom :</span> <br><br> Sanchez  </p>
-
-                        <p> <span>Prénom: </span> <br><br>Rick </p>
-
-                        <p> <span>Date de naissance: </span> <br><br> 12/07/1942</p>
-
-                        <p> <span>Pseudo :</span> <br> <br> Rick&Morty </p>
-
-                        <p> <span>Email:</span> <br> <br>rick&morty@hotmail.com </p>
-                    </div>
-
-                    <div class="colonne2">
-                        <p> <span>Adresse :  </span> <br><br> 14 obama street </p>
-
-                        <p> <span>Code postal : </span> <br><br>04468  </p>
-
-                        <p> <span>Ville: </span> <br><br>Oldtown (Midwest) </p>
-
-                        <p> <span>Numéro de téléphone:</span> <br><br>0102030405</p>
-                    </div>
-                </div>
-        </div>
-        
-    </form>
-
-<div class="backdrop">
-  <nav>
-    <ul>
-      <li><a class="lien"  href="index.html">Accueil</a></li>
-      <li><a class="lien" href="gestion_appareil.html">Mes appareils</a></li>
-      <li><a class="lien"  href="Page-profil.html">Mon profil</a></li>
-      <li><a class="lien" href="page-edition.html">Editer mon profil</a></li>
-    </ul>
-  </nav>
-</div>
-
+  <div class="backdrop">
+    <nav>
+      <ul>
+        <li><a class="lien"  href="index.html">Accueil</a></li>
+        <li><a class="lien" href="gestion_appareil.html">Mes appareils</a></li>
+        <li><a class="lien"  href="Page-profil.html">Mon profil</a></li>
+        <li><a class="lien" href="page-edition.html">Editer mon profil</a></li>
+      </ul>
+    </nav>
+  </div>
   <script src="script.js"></script>
-
 </body>
-
 </html>

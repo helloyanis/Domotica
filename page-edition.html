@@ -4,82 +4,79 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Editer votre profil</title>
-<link rel="stylesheet" href="navbar.css">
- <link rel="stylesheet" href="page-edition.css">
+<link rel="stylesheet" href="./css/navbar.css">
+ <link rel="stylesheet" href="./css/page-edition.css">
 </head>
 <body>
-
   <header class="navbar">
 		<!--La navbar-->
-		
-			<button class="btn"><img class="burger "src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="bouton burger" height="20em" width="20em"></button>
-      
-     <img class="logo" src="./img/logo.jpg" alt="Logo" height="50em" width="50em">
-      
-      <a class="button" href="#"> Rick&Morty</a>
-    </header>
+    <button class="btn">
+      <img class="burger "src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="bouton burger" height="20em" width="20em">
+    </button>
+    <img class="logo" src="./img/logo.jpg" alt="Logo" height="50em" width="50em">
+    <a class="connect" href="#">Rick&Morty</a>
+  </header>
 
-
-   <div class="form-div">
+  <section class="card">
     <h3>Editer votre profil</h3>
-
     <form>
-
-      <label>Avatar: </label> 
-      <input type="file" name="avatar"> 
-
-      <span>Email :</span>
-      <input type="email" name="newmail" >
-
-      <span>Adresse :</span>
-      <input type="text" name="newaddress" >
-
-      <span>Code postal:</span>
-      <input type="text" name="newpostcode" >
-
-      <span>Ville:</span>
-      <input type="text" name="newcity" >
-
-      <span>Numéro de téléphone:</span>
-      <input type="text" name="newphonenumber" >
+      <label for="avatar">
+        Avatar:
+        <input id="avatar" type="file" name="avatar"> 
+      </label> 
+      <label for="email">
+        Email :
+        <input id="email" type="email" name="mail" >
+      </label>
+      <label for="address">
+        Adresse :
+        <input id="address" type="text" name="address" >
+      </label>
+      <label for="postcode">
+        Code postal :
+        <input id="postcode" type="text" name="postcode" >
+      </label>
+      <label for="city">
+        Ville :
+        <input id="city" type="text" name="city" >
+      </label>
+      <label for="phonenumber">
+        Numéro de téléphone :
+        <input id="phonenumber" type="tel" name="phonenumber" >
+      </label>
 
       <input type="submit" name="submit" value="Valider">
     </form>
 
-    
     <details>
       <summary class="changePassword">
         <h3>Changer le mot de passe</h3>
       </summary>
-     
-
+      <form>
         <span> Ancien mot de passe:</span>
-        <input type="password" >
+        <input type="password">
 
         <span>Nouveau mot de passe:</span>
         <input type="password"> 
 
-        <span>Confirmer le nouveau mot de passe:</span><br>
-        <input type="password" >
+        <span>Confirmer le nouveau mot de passe:</span>
+        <input type="password">
 
         <input type="submit" name="submitPass" value="Valider">
-
       </form>
     </details>
+  </section>
 
+  <div class="backdrop">
+    <nav>
+      <ul>
+        <li><a class="lien" href="index.html">Accueil</a></li>
+        <li><a class="lien"  href="gestion_appareil.html">Mes appareils</a></li>
+        <li><a class="lien" href="Page-profil.html">Mon profil</a></li>
+        <li><a class="lien" href="page-edition.html">Editer mon profil</a></li>
+      </ul>
+    </nav>
   </div>
-
-
-<div class="backdrop">
-  <nav>
-    <ul>
-      <li><a class="lien" href="index.html">Accueil</a></li>
-      <li><a class="lien"  href="gestion_appareil.html">Mes appareils</a></li>
-      <li><a class="lien" href="Page-profil.html">Mon profil</a></li>
-      <li><a class="lien" href="page-edition.html">Editer mon profil</a></li>
-    </ul>
-  </nav>
-</div>
   
   <script src="script.js"></script>
 </body>

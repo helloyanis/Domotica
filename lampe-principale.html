@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lampe principale</title>
-  <link rel="stylesheet" href="navbar.css">
-  <link rel="stylesheet" href="appareil.css">
+  <link rel="stylesheet" href="./css/navbar.css">
+  <link rel="stylesheet" href="./css/appareil.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat&display=swap" rel="stylesheet">
   
@@ -18,9 +18,9 @@
 		
 		<button class="btn"><img class="burger "src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/1200px-Hamburger_icon.svg.png" alt="bouton burger" height="20em" width="20em"></button>
       
-    <img class="logo" src="./img/logo_vert.jpg" alt="Logo" height="50em" width="50em">
+    <img class="logo" src="./img/logo.jpg" alt="Logo" height="50em" width="50em">
       
-    <a class="button" href="connect.html"> Se connecter</a>
+    <a class="connect" href="connect.html"> Se connecter</a>
   </header>
 
  
@@ -28,13 +28,11 @@
 
  
  <!-- Réglages des appareils-->
+
  <h1>Réglages de la lampe principale</h1>
 
+  <section class="reglage">
 
-  
- 
-
-  <div class="reglage">
     <h2>Allumer/éteindre l'appareil</h2>
     <div class="onoffswitch">
       <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="my1offswitch" checked>
@@ -47,10 +45,9 @@
     <hr>
 
    <h2>Luminosité</h2>
-   <div>
-     <input type="range" value="50">
-   </div>
-
+   
+   <input type="range" class="lumino" min="0" max="100">
+   
    <hr>
 
    <h2>Couleur</h2>
@@ -59,9 +56,7 @@
     <div class="carre jaune"></div>
     <div class="carre orange"></div>
    
-
-
-  </div>
+  </section>
  
 
  <!--Le menu burger-->
@@ -70,7 +65,7 @@
      <ul class="Listemenu">
        <li><a class="lien" href="index.html">Accueil</a></li>
        <li><a class="lien" href="gestion_appareil.html">Mes appareils</a></li>
-       <li><a class="lien" href="page-profil.html">Mon profil</a></li>
+       <li><a class="lien" href="Page-profil.html">Mon profil</a></li>
        <li><a class="lien" href="page-edition.html">Editer mon profil</a></li>
      </ul>
    </nav>
