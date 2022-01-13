@@ -1,0 +1,84 @@
+/*Card blanche*/
+.card {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #fff;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+  padding: 12px 20px;
+  margin-bottom: 20px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  border: 1px solid #ccc;
+  margin-top: 8px;
+  box-sizing: border-box;
+}
+
+.submitPassword {
+  display: block;
+  padding: 14px 15px;
+  margin: 50px auto;
+  border: 2px solid transparent;
+  cursor: pointer;
+  width: 60%;
+}
+
+.submitPassword:hover {
+  background-color: white;
+  color: #53af57;
+  border-color: #53af57;
+}
+
+/*Sous partie pour le changement de mot de passe*/
+summary {
+  padding: 8px;
+  text-align: center;
+  font-size: 23px;
+}
+
+.changePassword {
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  background-color: rgba(0, 0, 0, 0.09);
+}
+
+/*Pour les navigateurs chromium tel que chrome, opera...*/
+.changePassword::-webkit-details-marker {
+  display: none;
+}
+
+/*Pour les navigateurs qui supportent le pseudo-élément marker sur summary comme firefox*/
+.changePassword::marker {
+  content: "";
+}
+
+/*Met une image de cadenas fermé avant le "changer le mot de passe */
+.changePassword::before {
+  content: url(../images/locked.png);
+  margin-right: 30px;
+}
+
+/*Quand la sous partie est ouverte, le cadenas est ouvert*/
+details[open] .changePassword::before {
+  content: url(../images/unlocked.png);
+}
+
+.changePassword h2 {
+  display: inline;
+  vertical-align: bottom;
+}

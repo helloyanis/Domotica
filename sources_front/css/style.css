@@ -1,0 +1,180 @@
+/*
+Fichier css de la page d'accueil
+*/
+
+main {
+  /* 0 0 = la position / auto 150px = la taille de l'image*/
+  background: 0 0 / auto 150px url("../images/lightbulbs.png") repeat-x;
+}
+
+img {
+  size: 1rem; /*Pour pas que les images soient trop grosses*/
+}
+
+.Presentation {
+  /*Le paragraphe de présentation de l'entreprise*/
+  background-color: white;
+  text-align: left;
+  box-shadow: 2px 2px 20px black;
+  border-radius: 0px 10px 0px 10px; /*Pour avoir différents coins de bordures (ronds ou carrés)*/
+  padding: 1rem;
+}
+.Avis {
+  /*La div contenant les avis*/
+  vertical-align: middle; /*Si jamais la div est plus haute que le texte, il sera aligné verticalement! (ca dépend de la taille de l'écran)*/
+  margin: 1em;
+
+  padding: 1em;
+}
+
+.Avis > article {
+  /*Cette syntaxe fait s'appliquer le css a n'importe quel "article" dans la balise Avs (ici ce sont les avis en tant que tel)*/
+
+  border-radius: 5px;
+  background-color: white;
+  margin: 3px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding: 3px;
+}
+
+.prod > img {
+  /*Pour ne pas avoir d'images trop grosses*/
+  max-width: 10rem;
+  max-height: 10rem;
+}
+
+.btnPrimary {
+  /*Le bouton Je me lance*/
+  padding: 3px;
+  color: black;
+  text-align: center;
+  border: black solid 2px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: transform 0.1s;
+  margin: 0 auto 30px;
+  width: 10rem;
+  display: flex;
+  justify-content: center;
+  background-color: orange;
+  font-size: 20px;
+}
+
+.btnPrimary:hover {
+  /*Quand on passe sa souris sur le bouton*/
+  transform: scale(1.1); /*Le bouton s'agrandit*/
+  animation: con 1s infinite; /*L'animation con (pour confirmer) se joue indéfiniment (elle est détaillée ci dessous)*/
+  cursor: pointer; /*Met le pointeur de souris dans la bonne forme*/
+}
+
+@keyframes con {
+  /*L'animation pour confirmer (quand on passe sa souris sur le bouton il clignote en blanc)*/
+  0% {
+    background-color: unset;
+  }
+  50% {
+    background-color: whitesmoke;
+  }
+  100% {
+    background-color: unset;
+  }
+}
+
+h1,
+h2 {
+  /*Pour changer l'alignement du texte (des titres)*/
+  text-align: center;
+  margin: 3rem;
+  margin-bottom: 70px;
+  margin-top: 70px;
+}
+
+.produits {
+  display: flex;
+  justify-content: space-around;
+}
+
+.NosProd {
+  /*Pour faire le cadre des produits et qu'ils soient séparés*/
+  margin: 2rem;
+}
+
+.bold {
+  /*Pour mettre en gras*/
+  font-weight: bold;
+}
+
+.NosProd > div > article {
+  /*Ce code est pour les produits (chaque produit). Ils s'affichent en liste car c'est plus facile à lire sur un petit écran*/
+  background-color: white;
+  padding: 1rem;
+  margin: 1rem;
+  border: solid black 2px;
+  border-radius: 5px; /*Pour arrondir les coins*/
+  text-align: center;
+  box-shadow: 2px 2px 20px black;
+  overflow: hidden; /*Pour que si jamais le texte ou l'image dépassent de la div ils soient cachés*/
+}
+
+@media only screen and (max-width: 600px) {
+  /*Ce code s'applique pour un petit écran*/
+
+  .prod {
+    /*Ce code est pour les produits (chaque produit). Ils s'affichent en liste car c'est plus facile à lire sur un petit écran*/
+    display: block; /*Cette ligne fait s'afficher en ligne les articles*/
+  }
+
+  .NosProd {
+    display: block;
+  }
+
+  img {
+    /*De plus petites images sur un plus petit écran*/
+    max-width: 7em;
+    max-height: 7em;
+  }
+
+  main {
+    padding: 150px 20px 80px;
+  }
+}
+
+@media only screen and (min-width: 601px) {
+  main {
+    padding: 150px 40px 80px;
+  }
+  .prod {
+    display: inline-block; /*Permet de l'afficher en petit carré et pas en gros rectangle qui prend toute la page*/
+    justify-content: space-around; /*Pour aligner les articles au centre*/
+  }
+
+  .btnPrimary {
+    font-size: 20px;
+  }
+
+  .Contenu {
+    /*Le contenu d'un article*/
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Presentation {
+    /*Pour changer la disposition du texte sur un petit écran*/
+    margin: 1em;
+    margin-right: 5em;
+    margin-left: 3em;
+    max-width: 30%;
+  }
+
+  img {
+    max-width: 15em;
+    max-height: 15em;
+  }
+
+  .prodcont {
+    /*La div qui contient tous les produits*/
+    justify-content: center;
+    display: flex;
+  }
+}

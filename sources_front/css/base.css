@@ -1,0 +1,155 @@
+/*Page css pour les éléments communs à toutes les pages*/
+
+body {
+  background-color: #268a7e;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Lobster", cursive;
+}
+
+h2 {
+  font-family: "Lobster", cursive;
+}
+
+/*La barre de navigation:
+utilisation d'un display grid avec 3 colonnes, avec une en taille automatique (prend juste la taille quelle a besoin) et les deux autres à 1fr (qui prenne la taille qui leur reste).
+*/
+.navbar {
+  position: sticky;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  z-index: 1; /*la navbar est passé au dessus du backdrop */
+}
+
+.btnPrimary {
+  display: block;
+  padding: 12px 20px;
+  margin: 50px auto;
+  border: 2px solid transparent;
+  cursor: pointer;
+  width: 60%;
+  background-color: #fdc709;
+}
+
+.btnPrimary:hover {
+  background-color: white;
+  color: #fdc709;
+  border: 2px solid #fdc709;
+}
+
+.btnSecondary {
+  text-decoration: none;
+  color: black;
+  margin: 0.5rem;
+  border: black solid;
+  border-radius: 10px;
+  transition: transform 0.1s;
+  padding: 2px;
+  justify-self: right;
+  align-self: center;
+}
+
+.btnSecondary:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+/* Partie sur le Menu Burger*/
+
+:focus {
+  /* Quand on navigue au clavier ou quand on clique sur le menu*/
+  outline: 2px solid #fdc712;
+}
+/*bouton burger*/
+.btn {
+  border: none;
+  background: transparent;
+  margin-left: 5px;
+  justify-self: left;
+}
+
+/*menu*/
+.backdrop {
+  position: fixed;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0);
+  pointer-events: none; /*Fait en sorte que l'on puisse cliquer à travers lorsque le menu est fermé, il est utilisé au lieu du display: none et permet de faire une transition entre l'état ouvert et fermé*/
+  transition: background-color 0.2s ease-in;
+}
+
+nav {
+  position: relative;
+  top: 0;
+  left: -30%; /*Quand le menu est fermé, pour le faire disparaitre*/
+  background-color: white;
+  /*Taille du menu quand il est ouvert*/
+  width: 30%;
+  height: 100%;
+  transition: left 0.2s ease-in;
+}
+
+nav ul {
+  margin: 0;
+  padding-inline-start: 0; /*padding sur la gauche*/
+  list-style-type: none; /*Enlève les puce de la liste*/
+}
+
+nav ul li {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+}
+
+/*met une bordure a partir du deuxième élément*/
+nav ul li:nth-child(n + 2) {
+  border-top: 2px solid rgba(0, 0, 0, 0.1);
+}
+
+/*Menu ouvert*/
+.backdrop.active {
+  background-color: rgba(0, 0, 0, 0.2);
+  pointer-events: all; /*Fait en sorte que l'on ne puisse plus cliquer et selectionner du texte sur le reste de la page quand le menu est ouvert*/
+}
+
+/*Permet de passer le menu dans la partie visible de l'écran*/
+.active nav {
+  left: 0;
+}
+
+/*Lien menant vers les pages dans le menu burger*/
+.lien {
+  text-decoration: none;
+  color: #929292;
+}
+
+/*Sur téléphone, l'ouverture du menu burger prend tout l'écran*/
+@media (max-width: 400px) {
+  nav {
+    width: 100%;
+    left: -100%;
+  }
+}
+
+.userCo {
+  width: 132px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-self: flex-end;
+  margin-right: 20px;
+}
+
+.userCo p {
+  font-size: 16px;
+}

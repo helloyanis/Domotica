@@ -1,0 +1,34 @@
+::placeholder /*Style de la police des input*/ {
+  font-family: "Montserrat", sans-serif;
+}
+
+.ins /*ecriture bouton inscription*/ {
+  display: block;
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+}
+
+input /*taille des cases*/ {
+  width: 60%;
+  padding: 12px 20px;
+  margin-bottom: 15px;
+}
+
+.connexion /*case blanche*/ {
+  text-align: center;
+
+  width: 30%;
+  box-shadow: 5px 5px 5px black;
+  border: solid 2px black;
+  border-radius: 20px;
+  background-color: white;
+  padding: 10px;
+  margin: 40px 33%;
+}
+
+@media (max-width: 768px) /*mettre en forme pour téléphone*/ {
+  .connexion {
+    width: 85%;
+    margin: 40px 4.5%;
+  }
+}

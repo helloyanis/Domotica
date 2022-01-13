@@ -1,0 +1,47 @@
+::placeholder /*Style de la police des input*/ {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 /*style de h2*/ {
+  text-align: center;
+}
+
+label /*style des mots au dessus des cases*/ {
+  text-align: left;
+  font-family: "Montserrat", sans-serif;
+  margin: 15px 1px;
+  padding-left: 1px;
+  padding-top: 5px;
+}
+
+input /* style des cases*/ {
+  margin-top: 10px;
+  width: 60%;
+  height: 35px;
+}
+
+.ins /*case blanche*/ {
+  box-shadow: 5px 5px 5px black;
+
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: white;
+  padding: 30px;
+  margin: 40px auto;
+  max-width: 400px;
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"],
+input[type="date"],input[type="tel"]
+
+/*style des cases input*/ {
+  display: block;
+  width: 100%;
+  padding: 8px 1px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  margin-top: 10px;
+  box-sizing: border-box;
+}
