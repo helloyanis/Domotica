@@ -1,4 +1,4 @@
 # ProjetDomotique
-Projet réalisé à Efficom, en equipe.
+Le code du projet, effectué en PHP pour transférer des données entre les pages (infos de comptes, etc...)
 
-Projet initialement sur repl.it 
+Aucun template n'a été utilisé! Codé en équipe de A à Z!
